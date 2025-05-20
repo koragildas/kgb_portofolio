@@ -25,6 +25,7 @@ body {
 }
 
 .logo {
+    width: 100px;
     position: relative;
     font-size: 25px;
     color: #fff;
@@ -34,10 +35,13 @@ body {
     opacity: 0;
     animation: slideRight 1s ease forwards;
 }
-
+.logo img{
+    width: 100%;
+    height: 100%;
+}
 .navbar a {
     display: inline-block;
-    font-size: 25px;
+    font-size: 15px;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
@@ -214,7 +218,7 @@ body {
 
 .about-text p {
     color: #fff;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 1.4;
     margin-bottom: 4rem;
     opacity: 0;
@@ -233,7 +237,7 @@ body {
     background: #081b29;
     font-size: 20px;
     line-height: 1.4;
-    margin-bottom: 4rem;
+    /* margin-bottom: 4rem; */
 }
 .sub-tittle{
     text-align: center;
@@ -439,7 +443,8 @@ section {
 }
 
 .Technical-bars .bar .info {
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
+    margin-right: 10px;
     width: 80px;
 }
 
@@ -724,8 +729,8 @@ section {
 }
 
 .main-text {
-    padding-top: 130px;
-    margin-top: 200px;
+    padding-top: 20px;
+    margin-top: 10px;
 }
 
 .main-text h2 {
@@ -825,9 +830,8 @@ section {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 3rem;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-top: 130px;
+    padding: 50px 30px 0px 30px;
+    margin-top: 0px;
     background-color: #081b29;
     padding-top: 80px;
     padding-bottom: 80px;
@@ -960,13 +964,15 @@ section {
 .last-text p {
     width: 100%;
     text-align: center;
-    padding: 25px 0;
-    background: #081b29;
-    font-weight: 300;
-    margin-top: 70px;
+    padding: 10px 0;
+    background: rgb(7, 85, 91);
     color: #fff;
+    margin: 0;
 }
-
+/* .p {
+    margin-top: 500px; 
+     margin-bottom: 1rem; 
+} */
 .top {
     position: fixed;
     bottom: 2.1rem;
@@ -977,7 +983,7 @@ section {
     color: #000;
     background: #0ef;
     font-size: 20px;
-    padding: 10px;
+    padding: 5px;
     border-radius: 0.5rem;
 }
 
