@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -321,7 +321,7 @@
 
             <div class="contact-info">
                 <div class="contact-list">
-                    <li><i class='bx bxs-send'></i>support.kogitech@gmail.com</li>
+                    <li><i class='bx bxs-send'></i><a href="mailto:contact.kogitech@gmail.com">contact.kogitech@gmail.com</a></li>
                     <li><i class='bx bxs-phone'></i> <a href="tel:‪+22891526909‬">‪(+228) 91 52 69 09‬</a></li>
                 </div>
 
@@ -340,11 +340,14 @@
         </div>
 
         <div class="contact-form">
-            <form action="">
-                <input type="text" placeholder="Enter Your Name" required>
-                <input type="email" placeholder="Enter Your Email" required>
-                <input type="text" placeholder="Enter Your Subject">
-                <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+            <div id="feedback"></div> <!-- Zone d'affichage du message -->
+
+            <form id="contactForm">
+                @csrf
+                <input type="text" name="name" placeholder="Enter Your Name" required>
+                <input type="email" name="email" placeholder="Enter Your Email" required>
+                <input type="text" name="subject" placeholder="Enter Your Subject">
+                <textarea name="message" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
                 <input type="submit" value="submit" class="send">
             </form>
         </div>
@@ -355,7 +358,56 @@
     </div>
     <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
 
-    <script src="main.js"></script>
+    <script src="/main.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', async function(e) {
+            e.preventDefault(); // Empêche le rechargement de la page
+
+            const form = e.target;
+            const formData = new FormData(form);
+
+            const button = form.querySelector('input[type="submit"]');
+            button.disabled = true;
+            button.value = "Sending...";
+
+            try {
+                const response = await fetch("{{ route('contact.send') }}", {
+                    method: 'POST',
+                    headers: {
+                        'X-CSRF-TOKEN': '{{ csrf_token() }}',
+                        'Accept': 'application/json'
+                    },
+                    body: formData
+                });
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    document.getElementById('feedback').innerHTML = `<p style="color:green;">${result.message}</p>`;
+                    form.reset(); // Réinitialiser le formulaire
+                } else {
+                    let errorMessages = '';
+                    if (result.errors) {
+                        for (let key in result.errors) {
+                            errorMessages += `<p style="color:red;">${result.errors[key]}</p>`;
+                        }
+                    } else if (result.error) {
+                        errorMessages = `<p style="color:red;">${result.error}</p>`;
+                    }
+                    document.getElementById('feedback').innerHTML = errorMessages;
+                }
+
+            } catch (error) {
+                console.error(error);
+                document.getElementById('feedback').innerHTML = `<p style="color:red;">Erreur lors de l'envoi.</p>`;
+            } finally {
+                button.disabled = false;
+                button.value = "Submit";
+            }
+        });
+    </script>
+
+
 </body>
 
 </html>
