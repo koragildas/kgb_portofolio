@@ -11,6 +11,8 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
     <link rel="icon" href="/img/Logo-Kogo.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 </head>
 
@@ -39,7 +41,7 @@
                         class="bx bxl-facebook"></i></a>
                 <a href="https://www.instagram.com/kora_gildas/" target="_blank" style="--i:8"><i
                         class="bx bxl-instagram"></i></a>
-                <a href="https://wa.me/22891526909?text=Bonjour%20Gildas%2C%20je%20viens%20de%20ton%20site"
+                <a href="https://wa.me/22896206891?text=Bonjour%20Gildas%2C%20je%20viens%20de%20ton%20site"
                     style="--i:9"><i class="bx bxl-whatsapp"></i></a>
                 <a href="https://www.youtube.com/@gildaskorabalo9180" target="_blank" style="--i:10"><i
                         class="bx bxl-youtube"></i></a>
@@ -56,6 +58,16 @@
                 </div>
             </div>
 
+     <div class="profile-container">
+  <div class="circle-animation">
+    <span class="circle-layer"></span>
+    <span class="circle-layer"></span>
+    <span class="circle-layer"></span>
+  </div>
+  <img src="{{ asset('img/gil9-removebg.png') }}" 
+       alt="Gildas Korabalo - Développeur Frontend"
+       class="profile-avatar">
+</div>
 
 
 

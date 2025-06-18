@@ -9,6 +9,10 @@
 body {
     color: #ededed;
     background: #081b29; /* Couleur de fond cohérente */
+    overflow-x:hidden ;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
@@ -257,6 +261,146 @@ body {
   scale: 1.1;
 }
 
+/* CSS spécifique à la photo de profil */
+/* Styles de base - Mobile First */
+.profile-container {
+  position: relative;
+  width: 180px; /* Taille par défaut mobile */
+  height: 180px;
+  margin: 0 auto; /* Centrage */
+}
+
+.profile-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #0ef;
+  box-shadow: 
+    0 0 20px rgba(0, 238, 255, 0.5),
+    0 0 40px rgba(0, 238, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* Animation du cercle - Version optimisée */
+.circle-animation {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 50%;
+  animation: rotate 20s linear infinite;
+  z-index: -1;
+  overflow: hidden; /* Contention des débordements */
+}
+
+.circle-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  border: 1.5px solid transparent;
+}
+
+.circle-layer:nth-child(1) {
+  border-top-color: #0ef;
+  border-right-color: #0ef;
+}
+
+.circle-layer:nth-child(2) {
+  border-bottom-color: #7f00ff;
+  border-left-color: #7f00ff;
+  transform: rotate(30deg);
+}
+
+.circle-layer:nth-child(3) {
+  border-top-color: #ff00ff;
+  border-right-color: #ff00ff;
+  transform: rotate(60deg);
+}
+
+/* Points de rupture Responsive */
+@media (min-width: 480px) {
+  .profile-container {
+    width: 200px;
+    height: 200px;
+    display: flex;
+  }
+  
+  .circle-animation {
+    top: -12px;
+    left: -12px;
+    right: -12px;
+    bottom: -12px;
+  }
+  
+  .circle-layer {
+    border-width: 2px;
+  }
+}
+
+@media (min-width: 768px) {
+  .profile-container {
+    width: 240px;
+    display: flex;
+    height: 240px;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .circle-animation {
+    top: -15px;
+    left: -15px;
+    right: -15px;
+    bottom: -15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .profile-container {
+    width: 280px;
+    height: 280px;
+    right: 10%;
+    display: flex;
+  }
+  
+  .profile-avatar {
+    border-width: 3px;
+  }
+  
+  .circle-layer {
+    border-width: 2.5px;
+  }
+}
+
+/* Animation */
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Effets hover - Desktop seulement */
+@media (hover: hover) and (min-width: 768px) {
+  .profile-container:hover .profile-avatar {
+    transform: scale(1.05);
+    box-shadow: 
+      0 0 30px rgba(0, 238, 255, 0.8),
+      0 0 60px rgba(0, 238, 255, 0.5);
+  }
+  
+  .profile-container:hover .circle-animation {
+    animation: rotate 8s linear infinite;
+  }
+  
+  .profile-container:hover .circle-layer {
+    border-width: 3px;
+  }
+}
 /* Section About */
 .about {
     display: grid;
