@@ -27,3 +27,37 @@ document.getElementById('download-both').addEventListener('click', function() {
   link2.click();
 });
 
+
+// Attendre que le DOM soit chargé
+document.addEventListener('DOMContentLoaded', function() {
+  const profileContainer = document.querySelector('.profile-container');
+  const circleAnimation = document.querySelector('.circle-animation');
+
+  // Vérifier si les éléments existent
+  if (!profileContainer || !circleAnimation) {
+    console.error('Elements not found in DOM');
+    return;
+  }
+
+  // Événement mousemove
+  profileContainer.addEventListener('mousemove', (e) => {
+    const rect = e.target.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    
+    const angle = Math.atan2(y - centerY, x - centerX) * 180 / Math.PI;
+    
+    // Réinitialiser l'animation avant d'appliquer la rotation
+    circleAnimation.style.animation = 'none';
+    circleAnimation.style.transform = `rotate(${angle + 90}deg)`;
+  });
+
+  // Événement mouseleave
+  profileContainer.addEventListener('mouseleave', () => {
+    circleAnimation.style.animation = 'rotate 15s linear infinite';
+    circleAnimation.style.transform = 'rotate(0deg)';
+  });
+});
