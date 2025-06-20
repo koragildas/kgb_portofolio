@@ -27,6 +27,8 @@
             <a href="#services" style="--i:4">Services</a>
             <a href="#contact" style="--i:5">Contact</a>
         </nav>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
     </header>
     <section class="home">
         <div class="home-content">
@@ -64,7 +66,7 @@
     <span class="circle-layer"></span>
     <span class="circle-layer"></span>
   </div>
-  <img src="{{ asset('img/gil9-removebg.png') }}" 
+  <img src="{{ asset('img/gil9-removebg.png') }}"
        alt="Gildas Korabalo - Développeur Frontend"
        class="profile-avatar">
 </div>
@@ -155,10 +157,11 @@
     <!-- <h1 class="sub-title">My <span>Skills</span></h1> -->
 
     <!-- Structure HTML pour la section Skills -->
-    <section id="skills">
+    <section id="skills" class="skills">
         <h2 class="skills-title">My <span>Skills</span></h2>
 
-        <div class="container1">
+        <div class="skills-container">
+             <div class="container1">
             <h3 class="heading1">Technical Skills</h3>
             <div class="Technical-bars">
                 <div class="bar">
@@ -246,6 +249,8 @@
                 </div>
             </div>
         </div>
+        </div>
+
     </section>
     <section>
         <div id="Portfolio" class="project">
@@ -416,6 +421,34 @@
                 button.disabled = false;
                 button.value = "Submit";
             }
+        });
+    </script>
+    <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            const menuIcon = document.getElementById('menu-icon');
+            const navbar = document.querySelector('.navbar');
+
+            menuIcon.addEventListener('click', function() {
+                console.log('ici')
+                navbar.classList.toggle('active');
+
+                // Animation des liens lorsqu'ils apparaissent
+                if (navbar.classList.contains('active')) {
+                    const navLinks = document.querySelectorAll('.navbar a');
+                    navLinks.forEach(link => {
+                        link.style.animation = `slideTop 0.5s ease forwards ${link.style.getPropertyValue('--i')}`;
+                    });
+                }
+            });
+
+            // Fermer le menu lorsqu'on clique sur un lien
+            document.querySelectorAll('.navbar a').forEach(link => {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth < 992) {
+                        navbar.classList.remove('active');
+                    }
+                });
+            });
         });
     </script>
 
