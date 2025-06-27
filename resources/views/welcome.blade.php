@@ -287,8 +287,8 @@
                         <div class="layer">
                             <h5>Sunofa Map</h5>
                             <p> Reconnect with Loved Ones in One Click <br>
-                                A smart web application for geolocation, protected by a PIN code, designed to connect
-                                families and friends. Modern interface, easy and fast to use.</p>
+                              A smart web application for geolocation, protected by a PIN code, designed to connect
+                                families and friends. Modern interface, easy and fast to use. </p>
                             <a href="https://sunofamap.com/"> <i class='bx bx-link-external'></i> </a>
                         </div>
                     </div>
