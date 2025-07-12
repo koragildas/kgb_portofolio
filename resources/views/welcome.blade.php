@@ -23,7 +23,7 @@
         <nav class="navbar">
             <a href="#home" style="--i:1" class="active">Home</a>
             <a href="#about" style="--i:2">About</a>
-            <a href="#skills" style="--i:3">Skills</a>
+            <!-- <a href="#skills" style="--i:3">Skills</a> -->
             <a href="#services" style="--i:4">Services</a>
             <a href="#contact" style="--i:5">Contact</a>
         </nav>
@@ -36,7 +36,7 @@
             <h1>Gildas KORABALO</h1>
             <H3>And I'm a <span class="text"></span></H3>
             <p>I'm a web Designer with extensive experience for over 3 years.
-                <br> exepertise is to create and website design,frontend design , and many more....
+                <br> exepertise is to create and website design,Front-End design , and many more....
             </p>
             <div class="home-sci">
                 <a href="https://www.facebook.com/profile.php?id=100072012502366" target="_blank" style="--i:7"><i
@@ -45,35 +45,51 @@
                         class="bx bxl-instagram"></i></a> -->
                 <a href="https://wa.me/22896206891?text=Bonjour%20Gildas%2C%20je%20viens%20de%20ton%20site"
                     style="--i:9"><i class="bx bxl-whatsapp"></i></a>
-                <a href="https://www.youtube.com/@gildaskorabalo9180" target="_blank" style="--i:10"><i
-                        class="bx bxl-youtube"></i></a>
-                <a href="https://gitlab.com/kgbgil0" target="_blank" style="--i:10"><i
-                        class="bx bxl-gitlab"></i></a>
+                <!-- <a href="https://www.youtube.com/@gildaskorabalo9180" target="_blank" style="--i:10"><i
+                        class="bx bxl-youtube"></i></a> -->
+                <!-- <a href="https://gitlab.com/kgbgil0" target="_blank" style="--i:10"><i
+                        class="bx bxl-gitlab"></i></a> -->
                 <a href="https://github.com/koragildas" target="_blank" style="--i:12"><i
-                            class='bx bxl-github'></i></a>
+                        class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/gildas-korabalo-7a9b60260/" target="_blank" style="--i:12"><i
+                        class='bx bxl-linkedin'></i></a>
 
             </div>
             <!-- <a href="#" class="btn_box">More About Me</a> -->
-            <div class="cv-container">
+            <!-- <div class="cv-container">
                 <button class="btn_box" id="download-cv" style="border: none;">Download my resume</button>
                 <div id="cv-options" class="cv-options">
-                    <!-- <h3>Sélectionnez la version de votre choix</h3> -->
+                    <h3>Sélectionnez la version de votre choix</h3> 
                     <a href="file/Gildas_Korabalo_Resume.docx.pdf" download class="cv-option">English version</a>
                     <a href="file/Gildas_pdf_CV (1).docx.pdf" download class="cv-option">French version</a>
                     <a href="#" id="download-both" class="cv-option">All versions</a>
                 </div>
+            </div> -->
+            <div class="cv-container">
+                <button class="btn_box" id="download-cv" style="border: none;">View my resume</button>
+                <div id="cv-options" class="cv-options">
+                    <a href="file/Gildas_Korabalo_Resume.docx.pdf" target="_blank" class="cv-option">English version</a>
+                    <a href="file/Gildas_pdf_CV (1).docx.pdf" target="_blank" class="cv-option">French version</a>
+
+                </div>
             </div>
 
-     <div class="profile-container">
-  <div class="circle-animation">
-    <span class="circle-layer"></span>
-    <span class="circle-layer"></span>
-    <span class="circle-layer"></span>
-  </div>
-  <img src="{{ asset('img/gil9-removebg.png') }}"
-       alt="Gildas Korabalo - Développeur Frontend"
-       class="profile-avatar">
-</div>
+            <!-- <div class="cv-container">
+                <a href="file/Gildas_Korabalo_Resume.docx.pdf" target="_blank" class="btn_box" style="border: none; text-decoration: none; display: inline-block;">
+                    My Resume
+                </a>
+            </div> -->
+
+            <div class="profile-container">
+                <div class="circle-animation">
+                    <span class="circle-layer"></span>
+                    <span class="circle-layer"></span>
+                    <span class="circle-layer"></span>
+                </div>
+                <img src="{{ asset('img/gil9-removebg.png') }}"
+                    alt="Gildas Korabalo - Développeur Frontend"
+                    class="profile-avatar">
+            </div>
 
 
 
@@ -81,20 +97,18 @@
     </section>
     <section class="about" id="about">
         <div class="about-img">
-            <img src="/img/gilomr1.png" alt="">
+            <img src="/img/kora25.png" alt="">
         </div>
         <div class="about-text">
             <h2>About <span>Me</span></h2>
-            <h4>Full Stack Developer!</h4>
-            <p> I’m a passionate web developer specializing in Frontend development, WordPress, and website design. With
+            <h4>Full-Stack Developer!</h4>
+            <p> I’m a passionate web developer specializing in Front-End development, WordPress, and website design. With
                 a strong background in both web development and business law, I bring a versatile and detail-oriented
-                approach to every project. <br>
-
+                approach to every project. 
                 <br> I’m skilled in modern technologies such as HTML, CSS, JavaScript, PHP, MySQL, SQL, Bootstrap,
-                Laravel, and many other programming languages and frameworks. <br>
+                Laravel, and many other programming languages and frameworks. 
                 <br>My goal is to create fast, attractive, and fully customized websites that meet each client’s unique
                 needs.
-
                 Always eager to learn, I combine technical expertise with strategic insight to deliver innovative,
                 secure, and user-focused web solutions.
             </p>
@@ -114,7 +128,7 @@
                         <p>I design user-friendly interfaces that provide seamless and enjoyable user experiences. My
                             goal is to create intuitive and visually appealing designs that make websites and
                             applications easy to navigate.</p>
-                        <a href="#" class="read">learn more</a>
+                        <!-- <a href="#" class="read">learn more</a> -->
                     </div>
                     <div>
                         <i class='bx bx-code' style='color:#00eeff'></i>
@@ -122,37 +136,37 @@
                         <p>I build responsive and dynamic websites using modern web technologies. Whether it's HTML,
                             CSS, JavaScript, PHP, or Laravel, I bring your ideas to life with clean and efficient code.
                         </p>
-                        <a href="#" class="read">learn more</a>
+                        <!-- <a href="#" class="read">learn more</a> -->
                     </div>
                     <div>
                         <i class='bx bx-crop' style='color:#00eeff'></i>
                         <h2>Responsive Design</h2>
-                        <p>I ensure that your website looks great and functions perfectly on all devices—desktops,
-                            tablets, and smartphones. A responsive design improves user engagement and accessibilitys.
+                        <p>I ensure that your website looks great and functions perfectly on all devices desktops,
+                            tablets, and smartphones. A responsive design improves user engagement and accessibility.
                         </p>
-                        <a href="#" class="read">learn more</a>
+                        <!-- <a href="#" class="read">learn more</a> -->
                     </div>
                     <div>
                         <i class='bx bxl-apple' style='color:#00eeff'></i>
                         <h2> Apple/iOS Development</h2>
                         <p>I offer development services for iOS platforms, creating optimized and high-performance
                             applications compatible with iPhones and iPads, ensuring a native Apple experience.</p>
-                        <a href="#" class="read">learn more</a>
+                        <!-- <a href="#" class="read">learn more</a> -->
                     </div>
                     <div>
                         <i class='bx bxl-wordpress' style='color:#00eeff'></i>
                         <h2>WordPress Development</h2>
                         <p>I develop custom WordPress websites tailored to your needs. Whether it's a blog, corporate
                             site, or e-commerce platform, I ensure easy content management and professional results.</p>
-                        <a href="#" class="read">learn more</a>
+                        <!-- <a href="#" class="read">learn more</a> -->
                     </div>
                     <div>
                         <i class='bx bxl-flutter' style='color:#00eeff'></i>
                         <h2>Flutter Mobile App</h2>
                         <p>I build cross-platform mobile apps using Flutter. With a single codebase, your app runs
-                            smoothly on both Android and iOS, saving you time and cost while delivering high
+                            smoothly on both Android and iOS, saving you time and money while delivering high
                             performance.</p>
-                        <a href="#" class="read">learn more</a>
+                        <!-- <a href="#" class="read">learn more</a> -->
                     </div>
                 </div>
             </div>
@@ -161,105 +175,105 @@
     <!-- <h1 class="sub-title">My <span>Skills</span></h1> -->
 
     <!-- Structure HTML pour la section Skills -->
-    <section id="skills" class="skills">
+    <!-- <section id="skills" class="skills">
         <h2 class="skills-title">My <span>Skills</span></h2>
 
         <div class="skills-container">
-             <div class="container1">
-            <h3 class="heading1">Technical Skills</h3>
-            <div class="Technical-bars">
-                <div class="bar">
-                    <i class='bx bxl-html5' style='color:#e34c26'></i>
-                    <div class="info">
-                        <span>HTML</span>
+            <div class="container1">
+                <h3 class="heading1">Technical Skills</h3>
+                <div class="Technical-bars">
+                    <div class="bar">
+                        <i class='bx bxl-html5' style='color:#e34c26'></i>
+                        <div class="info">
+                            <span>HTML</span>
+                        </div>
+                        <div class="progress-line html">
+                            <span></span>
+                        </div>
                     </div>
-                    <div class="progress-line html">
-                        <span></span>
+                    <div class="bar">
+                        <i class='bx bxl-css3' style='color:#2965f1'></i>
+                        <div class="info">
+                            <span>CSS</span>
+                        </div>
+                        <div class="progress-line css">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <i class='bx bxl-javascript' style='color:#f0db4f'></i>
+                        <div class="info">
+                            <span>Javascript</span>
+                        </div>
+                        <div class="progress-line Javascript">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <i class='bx bxl-react' style='color:#61DBFB'></i>
+                        <div class="info">
+                            <span>React</span>
+                        </div>
+                        <div class="progress-line React">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <i class='bx bxl-python' style='color:#306998'></i>
+                        <div class="info">
+                            <span>Python</span>
+                        </div>
+                        <div class="progress-line Python">
+                            <span></span>
+                        </div>
                     </div>
                 </div>
-                <div class="bar">
-                    <i class='bx bxl-css3' style='color:#2965f1'></i>
-                    <div class="info">
-                        <span>CSS</span>
+            </div>
+
+            <div class="container1">
+                <h3 class="heading">Professional Skills</h3>
+                <div class="radial-bars">
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">90%</div>
+                        <div class="text-one">Creativity</div>
                     </div>
-                    <div class="progress-line css">
-                        <span></span>
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">65%</div>
+                        <div class="text-one">Communication</div>
                     </div>
-                </div>
-                <div class="bar">
-                    <i class='bx bxl-javascript' style='color:#f0db4f'></i>
-                    <div class="info">
-                        <span>Javascript</span>
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">75%</div>
+                        <div class="text-one">Problem Solving</div>
                     </div>
-                    <div class="progress-line Javascript">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar">
-                    <i class='bx bxl-react' style='color:#61DBFB'></i>
-                    <div class="info">
-                        <span>React</span>
-                    </div>
-                    <div class="progress-line React">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar">
-                    <i class='bx bxl-python' style='color:#306998'></i>
-                    <div class="info">
-                        <span>Python</span>
-                    </div>
-                    <div class="progress-line Python">
-                        <span></span>
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">85%</div>
+                        <div class="text-one">Teamwork</div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container1">
-            <h3 class="heading">Professional Skills</h3>
-            <div class="radial-bars">
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">90%</div>
-                    <div class="text-one">Creativity</div>
-                </div>
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">65%</div>
-                    <div class="text-one">Communication</div>
-                </div>
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">75%</div>
-                    <div class="text-one">Problem Solving</div>
-                </div>
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">85%</div>
-                    <div class="text-one">Teamwork</div>
-                </div>
-            </div>
-        </div>
-        </div>
-
-    </section>
+    </section> -->
     <section>
         <div id="Portfolio" class="project">
             <div class="main-text">
-                <h2>Latest <span>project</span></h2>
+                <h2>Latest <span>projects</span></h2>
 
                 <div class="portfolio-content container">
                     <div class="row">
@@ -288,7 +302,7 @@
                             <h5>Sunofa Map</h5>
                             <p> Reconnect with Loved Ones in One Click <br>
                                 A smart web application for geolocation, protected by a PIN code, designed to connect
-                                families and friends. Modern interface, easy and fast to use.</p>
+                                families and friends. Modern interface, easy and fast to use. </p>
                             <a href="https://sunofamap.com/"> <i class='bx bx-link-external'></i> </a>
                         </div>
                     </div>
@@ -320,9 +334,9 @@
                             <h5>CANAAN CARE SERVICES</h5>
                             <p>A company specialized in home care and personalized support for elderly or vulnerable individuals.
                                 The website highlights their services, facilitates contact,
-                                 and ensures smooth navigation on both
-                                  desktop and mobile devices.</p>
-                            <a href="https://ccs.sunofamap.com/"> <i class='bx bx-link-external'></i> </a>
+                                and ensures smooth navigation on both
+                                desktop and mobile devices.</p>
+                            <a href="https://canaanapp.com/"> <i class='bx bx-link-external'></i> </a>
                         </div>
                     </div>
                 </div>
@@ -335,10 +349,8 @@
             <h4>Let's Work Together</h4>
             <p>Do you have an idea? A project in mind? <br>
                 I’m here to turn your vision into reality. Whether it’s building a modern website, boosting your online
-                presence, or benefiting from my skills in development and design. <br>I’m ready to take on any challenge
-                with you.
-
-                Your success starts with a message.
+                presence, or benefiting from my skills in development and design.I’m ready to take on any challenge
+                with you.Your success starts with a message.
                 So don’t wait... reach out now and let’s create something amazing together!</p>
 
             <div class="contact-info">
@@ -348,15 +360,19 @@
                 </div>
 
                 <div class="contact-icons">
-                    <a href="https://www.facebook.com/profile.php?id=100072012502366" target="_blank" style="--i:7"><i
+                    <a href="https://wa.me/22896206891?text=Bonjour%20Gildas%2C%20je%20viens%20de%20ton%20site"
+                        style="--i:9"><i class="bx bxl-whatsapp"></i></a>
+                    <a href="https://github.com/koragildas" target="_blank" style="--i:12"><i
+                            class='bx bxl-github'></i></a>
+                    <!-- <a href="https://www.facebook.com/profile.php?id=100072012502366" target="_blank" style="--i:7"><i
                             class="bx bxl-facebook"></i></a>
                     <a href="https://www.instagram.com/kora_gildas/" target="_blank" style="--i:8"><i
                             class='bx bxl-instagram'></i></a>
                     <a href="https://x.com/Gildas_korabalo" target="_blank" style="--i:11"><i
-                            class='bx bxl-twitter'></i></a>
+                            class='bx bxl-twitter'></i></a> -->
                     <a href="https://www.linkedin.com/in/gildas-korabalo-7a9b60260/" target="_blank" style="--i:12"><i
                             class='bx bxl-linkedin'></i></a>
-                    
+
 
                 </div>
             </div>
@@ -430,7 +446,7 @@
         });
     </script>
     <script>
-            document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function() {
             const menuIcon = document.getElementById('menu-icon');
             const navbar = document.querySelector('.navbar');
 

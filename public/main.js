@@ -1,5 +1,5 @@
 var typed = new Typed(".text", {
-    strings: ["Frontend Developer", "Web Developer", "WordPress Developer", "Business Lawyer"],
+    strings: ["Front-End Developer", "Web Developer", "WordPress Developer", "Business Lawyer"],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
@@ -60,4 +60,12 @@ document.addEventListener('DOMContentLoaded', function() {
     circleAnimation.style.animation = 'rotate 15s linear infinite';
     circleAnimation.style.transform = 'rotate(0deg)';
   });
+});
+
+
+
+document.getElementById('view-both').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.open('file/Gildas_Korabalo_Resume.docx.pdf', '_blank');
+    window.open('file/Gildas_pdf_CV (1).docx.pdf', '_blank');
 });
