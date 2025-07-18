@@ -27,8 +27,8 @@
             <a href="#services" style="--i:4">Services</a>
             <a href="#contact" style="--i:5">Contact</a>
         </nav>
-
         <i class='bx bx-menu' id="menu-icon"></i>
+        
     </header>
     <section class="home">
         <div class="home-content">
@@ -59,7 +59,7 @@
             <!-- <div class="cv-container">
                 <button class="btn_box" id="download-cv" style="border: none;">Download my resume</button>
                 <div id="cv-options" class="cv-options">
-                    <h3>Sélectionnez la version de votre choix</h3> 
+                    <h3>Sélectionnez la version de votre choix</h3>
                     <a href="file/Gildas_Korabalo_Resume.docx.pdf" download class="cv-option">English version</a>
                     <a href="file/Gildas_pdf_CV (1).docx.pdf" download class="cv-option">French version</a>
                     <a href="#" id="download-both" class="cv-option">All versions</a>
@@ -80,20 +80,17 @@
                 </a>
             </div> -->
 
-            <div class="profile-container">
-                <div class="circle-animation">
-                    <span class="circle-layer"></span>
-                    <span class="circle-layer"></span>
-                    <span class="circle-layer"></span>
-                </div>
-                <img src="{{ asset('img/gil9-removebg.png') }}"
-                    alt="Gildas Korabalo - Développeur Frontend"
-                    class="profile-avatar">
+        </div>
+        <div class="profile-container">
+            <div class="circle-animation">
+                <span class="circle-layer"></span>
+                <span class="circle-layer"></span>
+                <span class="circle-layer"></span>
             </div>
-
-
-
-
+            <img src="{{ asset('img/gil9-removebg.png') }}"
+                alt="Gildas Korabalo - Développeur Frontend"
+                class="profile-avatar">
+        </div>
     </section>
     <section class="about" id="about">
         <div class="about-img">
@@ -104,9 +101,9 @@
             <h4>Full-Stack Developer!</h4>
             <p> I’m a passionate web developer specializing in Front-End development, WordPress, and website design. With
                 a strong background in both web development and business law, I bring a versatile and detail-oriented
-                approach to every project. 
+                approach to every project.
                 <br> I’m skilled in modern technologies such as HTML, CSS, JavaScript, PHP, MySQL, SQL, Bootstrap,
-                Laravel, and many other programming languages and frameworks. 
+                Laravel, and many other programming languages and frameworks.
                 <br>My goal is to create fast, attractive, and fully customized websites that meet each client’s unique
                 needs.
                 Always eager to learn, I combine technical expertise with strategic insight to deliver innovative,
