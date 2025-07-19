@@ -1440,10 +1440,13 @@ body {
   }
 
   .profile-container {
+    position: relative; /* Rétablir le flux normal */
+    top: auto; /* Annuler le positionnement */
+    right: auto; /* Annuler le positionnement */
+    transform: none; /* Annuler la transformation */
     width: 260px;
     height: 260px;
     margin: 0 auto 25px;
-    position: relative;
   }
 
   .profile-avatar {
@@ -1455,6 +1458,10 @@ body {
     justify-content: center;
     margin: 20px auto;
     gap: 15px;
+  }
+
+  .cv-container {
+    text-align: center;
   }
 
   .circle-animation {
