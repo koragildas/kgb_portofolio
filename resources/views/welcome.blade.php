@@ -28,7 +28,7 @@
             <a href="#contact" style="--i:5">Contact</a>
         </nav>
         <i class='bx bx-menu' id="menu-icon"></i>
-        
+
     </header>
     <section class="home">
         <div class="home-content">
@@ -272,7 +272,7 @@
             <div class="main-text">
                 <h2>Latest <span>projects</span></h2>
 
-                <div class="portfolio-content container">
+                <div class="container portfolio-content">
                     <div class="row">
                         <img src="img/sayebookCp.png" alt="Project 1">
                         <div class="layer">
