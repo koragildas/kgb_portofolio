@@ -39,7 +39,7 @@
             <h1>Gildas KORABALO</h1>
             <H3>And I'm a <span class="text"></span></H3>
             <p>I'm a web Designer with extensive experience for over 3 years.
-                <br> exepertise is to create and website design,Front-End design , and many more....
+                {{-- <br> exepertise is to create and website design,Front-End design , and many more.... --}}
             </p>
             <div class="home-sci">
                 <a href="https://www.facebook.com/profile.php?id=100072012502366" target="_blank" style="--i:7"><i
@@ -102,17 +102,17 @@
         <div class="about-text">
             <h2>About <span>Me</span></h2>
             <h4>Full-Stack Developer!</h4>
-            <p> I’m a passionate web developer specializing in Front-End development, WordPress, and website design. With
+            <p> I’m a passionate web developer specializing in front-end development, WordPress, and website design. With
                 a strong background in both web development and business law, I bring a versatile and detail-oriented
-                approach to every project.
+                approach to every project. <br>
                 <br> I’m skilled in modern technologies such as HTML, CSS, JavaScript, PHP, MySQL, SQL, Bootstrap,
-                Laravel, and many other programming languages and frameworks.
+                Laravel, and many other programming languages and frameworks. <br>
                 <br>My goal is to create fast, attractive, and fully customized websites that meet each client’s unique
-                needs.
+                needs. <br>
                 Always eager to learn, I combine technical expertise with strategic insight to deliver innovative,
                 secure, and user-focused web solutions.
             </p>
-            <a href="#" class="btn-box">More About Me</a>
+            {{-- <a href="#" class="btn-box">More About Me</a> --}}
         </div>
 
     </section>
@@ -273,7 +273,7 @@
     <section>
         <div id="Portfolio" class="project">
             <div class="main-text">
-                <h2>Latest <span>projects</span></h2>
+                <h2>Latest <span>Projects</span></h2>
 
                 <div class="container portfolio-content">
                     <div class="row">
@@ -349,8 +349,8 @@
             <h4>Let's Work Together</h4>
             <p>Do you have an idea? A project in mind? <br>
                 I’m here to turn your vision into reality. Whether it’s building a modern website, boosting your online
-                presence, or benefiting from my skills in development and design.I’m ready to take on any challenge
-                with you.Your success starts with a message.
+                presence, or benefiting from my skills in development and design, I’m ready to take on any challenge
+                with you. Your success starts with a message.
                 So don’t wait... reach out now and let’s create something amazing together!</p>
 
             <div class="contact-info">
