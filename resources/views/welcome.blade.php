@@ -4,14 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <link rel="icon" href="/img/Logo-Kogo.png" type="image/png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/img/Logo-Kogo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/Logo-Kogo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/Logo-Kogo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gildas Korabalo</title>
     <link rel="stylesheet" href="/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-    <link rel="icon" href="/img/Logo-Kogo.png" type="image/png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 </head>
@@ -27,8 +30,8 @@
             <a href="#services" style="--i:4">Services</a>
             <a href="#contact" style="--i:5">Contact</a>
         </nav>
-
         <i class='bx bx-menu' id="menu-icon"></i>
+
     </header>
     <section class="home">
         <div class="home-content">
@@ -36,7 +39,7 @@
             <h1>Gildas KORABALO</h1>
             <H3>And I'm a <span class="text"></span></H3>
             <p>I'm a web Designer with extensive experience for over 3 years.
-                <br> exepertise is to create and website design,Front-End design , and many more....
+                {{-- <br> exepertise is to create and website design,Front-End design , and many more.... --}}
             </p>
             <div class="home-sci">
                 <a href="https://www.facebook.com/profile.php?id=100072012502366" target="_blank" style="--i:7"><i
@@ -59,7 +62,7 @@
             <!-- <div class="cv-container">
                 <button class="btn_box" id="download-cv" style="border: none;">Download my resume</button>
                 <div id="cv-options" class="cv-options">
-                    <h3>Sélectionnez la version de votre choix</h3> 
+                    <h3>Sélectionnez la version de votre choix</h3>
                     <a href="file/Gildas_Korabalo_Resume.docx.pdf" download class="cv-option">English version</a>
                     <a href="file/Gildas_pdf_CV (1).docx.pdf" download class="cv-option">French version</a>
                     <a href="#" id="download-both" class="cv-option">All versions</a>
@@ -80,20 +83,17 @@
                 </a>
             </div> -->
 
-            <div class="profile-container">
-                <div class="circle-animation">
-                    <span class="circle-layer"></span>
-                    <span class="circle-layer"></span>
-                    <span class="circle-layer"></span>
-                </div>
-                <img src="{{ asset('img/gil9-removebg.png') }}"
-                    alt="Gildas Korabalo - Développeur Frontend"
-                    class="profile-avatar">
+        </div>
+        <div class="profile-container">
+            <div class="circle-animation">
+                <span class="circle-layer"></span>
+                <span class="circle-layer"></span>
+                <span class="circle-layer"></span>
             </div>
-
-
-
-
+            <img src="{{ asset('img/gil9-removebg.png') }}"
+                alt="Gildas Korabalo - Développeur Frontend"
+                class="profile-avatar">
+        </div>
     </section>
     <section class="about" id="about">
         <div class="about-img">
@@ -102,17 +102,25 @@
         <div class="about-text">
             <h2>About <span>Me</span></h2>
             <h4>Full-Stack Developer!</h4>
-            <p> I’m a passionate web developer specializing in Front-End development, WordPress, and website design. With
-                a strong background in both web development and business law, I bring a versatile and detail-oriented
-                approach to every project. 
-                <br> I’m skilled in modern technologies such as HTML, CSS, JavaScript, PHP, MySQL, SQL, Bootstrap,
-                Laravel, and many other programming languages and frameworks. 
-                <br>My goal is to create fast, attractive, and fully customized websites that meet each client’s unique
-                needs.
-                Always eager to learn, I combine technical expertise with strategic insight to deliver innovative,
-                secure, and user-focused web solutions.
+            <p> <p>
+                    I’m a passionate web developer specializing in front-end development, WordPress, and website design. With
+                    a strong background in both web development and business law, I bring a versatile and detail-oriented
+                    approach to every project.
+                </p>
+                <p>
+                    I’m skilled in modern technologies such as HTML, CSS, JavaScript, PHP, MySQL, SQL, Bootstrap,
+                    Laravel, and many other programming languages and frameworks.
+                </p>
+                <p>
+                    My goal is to create fast, attractive, and fully customized websites that meet each client’s unique
+                    needs.
+                </p>
+                <p>
+                    Always eager to learn, I combine technical expertise with strategic insight to deliver innovative,
+                    secure, and user-focused web solutions.
+                </p>
             </p>
-            <a href="#" class="btn-box">More About Me</a>
+            {{-- <a href="#" class="btn-box">More About Me</a> --}}
         </div>
 
     </section>
@@ -273,9 +281,9 @@
     <section>
         <div id="Portfolio" class="project">
             <div class="main-text">
-                <h2>Latest <span>projects</span></h2>
+                <h2>Latest <span>Projects</span></h2>
 
-                <div class="portfolio-content container">
+                <div class="container portfolio-content">
                     <div class="row">
                         <img src="img/sayebookCp.png" alt="Project 1">
                         <div class="layer">
@@ -347,11 +355,13 @@
         <div class="contact-text">
             <h2>Contact <span>Me</span></h2>
             <h4>Let's Work Together</h4>
-            <p>Do you have an idea? A project in mind? <br>
+            <p>Do you have an idea? A project in mind? </p>
+            <p>
                 I’m here to turn your vision into reality. Whether it’s building a modern website, boosting your online
-                presence, or benefiting from my skills in development and design.I’m ready to take on any challenge
-                with you.Your success starts with a message.
-                So don’t wait... reach out now and let’s create something amazing together!</p>
+                presence, or benefiting from my skills in development and design, I’m ready to take on any challenge
+                with you. Your success starts with a message.
+                So don’t wait... reach out now and let’s create something amazing together!
+            </p>
 
             <div class="contact-info">
                 <div class="contact-list">
