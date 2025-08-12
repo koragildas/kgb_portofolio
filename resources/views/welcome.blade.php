@@ -102,15 +102,23 @@
         <div class="about-text">
             <h2>About <span>Me</span></h2>
             <h4>Full-Stack Developer!</h4>
-            <p> I’m a passionate web developer specializing in front-end development, WordPress, and website design. With
-                a strong background in both web development and business law, I bring a versatile and detail-oriented
-                approach to every project. <br>
-                <br> I’m skilled in modern technologies such as HTML, CSS, JavaScript, PHP, MySQL, SQL, Bootstrap,
-                Laravel, and many other programming languages and frameworks. <br>
-                <br>My goal is to create fast, attractive, and fully customized websites that meet each client’s unique
-                needs. <br>
-                Always eager to learn, I combine technical expertise with strategic insight to deliver innovative,
-                secure, and user-focused web solutions.
+            <p> <p>
+                    I’m a passionate web developer specializing in front-end development, WordPress, and website design. With
+                    a strong background in both web development and business law, I bring a versatile and detail-oriented
+                    approach to every project.
+                </p>
+                <p>
+                    I’m skilled in modern technologies such as HTML, CSS, JavaScript, PHP, MySQL, SQL, Bootstrap,
+                    Laravel, and many other programming languages and frameworks.
+                </p>
+                <p>
+                    My goal is to create fast, attractive, and fully customized websites that meet each client’s unique
+                    needs.
+                </p>
+                <p>
+                    Always eager to learn, I combine technical expertise with strategic insight to deliver innovative,
+                    secure, and user-focused web solutions.
+                </p>
             </p>
             {{-- <a href="#" class="btn-box">More About Me</a> --}}
         </div>
@@ -347,11 +355,13 @@
         <div class="contact-text">
             <h2>Contact <span>Me</span></h2>
             <h4>Let's Work Together</h4>
-            <p>Do you have an idea? A project in mind? <br>
+            <p>Do you have an idea? A project in mind? </p>
+            <p>
                 I’m here to turn your vision into reality. Whether it’s building a modern website, boosting your online
                 presence, or benefiting from my skills in development and design, I’m ready to take on any challenge
                 with you. Your success starts with a message.
-                So don’t wait... reach out now and let’s create something amazing together!</p>
+                So don’t wait... reach out now and let’s create something amazing together!
+            </p>
 
             <div class="contact-info">
                 <div class="contact-list">
