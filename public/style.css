@@ -1494,11 +1494,17 @@ body {
     animation-delay: 0.5s;
     transition: all 0.3s ease; */
 
+    cursor: pointer;
     color: #fff;
     font-size: 2.5rem;
     margin-top: 0; /* supprime toute marge haute */
     padding-top: 0; /* supprime tout padding haut */
     align-self: flex-start; /* force l'alignement en haut */
+    animation: slideTop 1s ease forwards;
+    display: block;
+    opacity: 0;
+    animation-delay: 0.5s;
+    transition: all 0.3s ease; */
 }
 
 #menu-icon:hover {
