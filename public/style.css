@@ -1462,6 +1462,7 @@ body {
     align-items: flex-start; /* aligne les éléments en haut */
     z-index: 1000;
     height: auto; /* hauteur automatique */
+    
 
 }
 
