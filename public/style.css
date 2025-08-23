@@ -1462,7 +1462,7 @@ body {
     align-items: flex-start; /* aligne les éléments en haut */
     z-index: 1000;
     height: auto; /* hauteur automatique */
-    
+
 
 }
 
@@ -1562,6 +1562,18 @@ body {
     color: #0ef;
     background: rgba(0, 238, 255, 0.1);
     box-shadow: 0 0 10px rgba(0, 238, 255, 0.2);
+}
+
+/* --------------css du menu humburger ----------------*/
+
+.menu-humburger{
+    display: none;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right:50px;
+    width:40px;
+
 }
 
 /* Desktop View */
