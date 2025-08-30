@@ -46,7 +46,7 @@
             <h3>Hello, It's Me </h3>
             <h1>Gildas KORABALO</h1>
             <H3 class="and-im-a">And I'm a<br><span class="job-title" style="color: #0ef;">Front-End Developer | Web Developer | WordPress | Business Lawyer</span></H3>
-            <p>I'm a web Designer with extensive experience for over 3 years.
+            <p>I'm a Web Designer with extensive experience for over 3 years.
                 {{-- <br> exepertise is to create and website design,Front-End design , and many more.... --}}
             </p>
             <div class="home-sci">
