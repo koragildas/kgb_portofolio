@@ -1,10 +1,4 @@
-var typed = new Typed(".text", {
-    strings: ["Front-End Developer", "Web Developer", "WordPress Developer", "Business Lawyer"],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
-    loop: true
-});
+
 // document.getElementById('download-cv').addEventListener('click', function() {
 //   document.getElementById('cv-options').style.display = 'block';
 // });
