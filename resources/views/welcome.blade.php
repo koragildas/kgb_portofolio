@@ -10,37 +10,45 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/img/Logo-Kogo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gildas Korabalo</title>
-    <link rel="stylesheet" href="/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-
-
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body>
     <header class="header">
-        <a href="#" class="logo"><img src="img/Logo-Kogo.png" alt=""></a>
+        {{-- <a href="#" class="logo"><img src="img/Logo-Kogo.png" alt=""></a> --}}
 
-        <nav class="navbar">
+        {{-- <nav class="navbar">
             <a href="#home" style="--i:1" class="active">Home</a>
             <a href="#about" style="--i:2">About</a>
             <!-- <a href="#skills" style="--i:3">Skills</a> -->
             <a href="#services" style="--i:4">Services</a>
             <a href="#contact" style="--i:5">Contact</a>
+        </nav> --}}
+
+        <a href="#" class="logo"><img src="img/Logo-Kogo.png" alt=""></a>
+
+        <nav class="navbar">
+            <a href="#home" style="--i:1" class="active">Home</a>
+            <a href="#about" style="--i:2">About</a>
+            <a href="#services" style="--i:4">Services</a>
+            <a href="#contact" style="--i:5">Contact</a>
         </nav>
+
         <i class='bx bx-menu' id="menu-icon"></i>
 
     </header>
     <section class="home">
         <div class="home-content">
-            <h3>Hello, It's Me </h3>
+            {{-- <h3>Hello, It's Me </h3> --}}
             <h1>Gildas KORABALO</h1>
-            <H3>And I'm a <span class="text"></span></H3>
-            <p>I'm a web Designer with extensive experience for over 3 years.
+            <H3 class="and-im-a"><br><span class="job-title" style="color: #0ef;">Web Developer | Business Lawyer</span></H3>
+            {{-- <p>I’m a Web Designer with 3 years of experience. --}}
                 {{-- <br> exepertise is to create and website design,Front-End design , and many more.... --}}
-            </p>
+            {{-- </p> --}}
             <div class="home-sci">
                 <a href="https://www.facebook.com/profile.php?id=100072012502366" target="_blank" style="--i:7"><i
                         class="bx bxl-facebook"></i></a>
@@ -407,7 +415,6 @@
     </div>
     <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
 
-    <script src="/main.js"></script>
     <script>
         document.getElementById('contactForm').addEventListener('submit', async function(e) {
             e.preventDefault(); // Empêche le rechargement de la page
@@ -455,36 +462,6 @@
             }
         });
     </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuIcon = document.getElementById('menu-icon');
-            const navbar = document.querySelector('.navbar');
-
-            menuIcon.addEventListener('click', function() {
-                console.log('ici')
-                navbar.classList.toggle('active');
-
-                // Animation des liens lorsqu'ils apparaissent
-                if (navbar.classList.contains('active')) {
-                    const navLinks = document.querySelectorAll('.navbar a');
-                    navLinks.forEach(link => {
-                        link.style.animation = `slideTop 0.5s ease forwards ${link.style.getPropertyValue('--i')}`;
-                    });
-                }
-            });
-
-            // Fermer le menu lorsqu'on clique sur un lien
-            document.querySelectorAll('.navbar a').forEach(link => {
-                link.addEventListener('click', function() {
-                    if (window.innerWidth < 992) {
-                        navbar.classList.remove('active');
-                    }
-                });
-            });
-        });
-    </script>
-
-
 </body>
 
 </html>
