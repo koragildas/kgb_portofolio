@@ -43,12 +43,12 @@
     </header>
     <section class="home">
         <div class="home-content">
-            <h3>Hello, It's Me </h3>
+            {{-- <h3>Hello, It's Me </h3> --}}
             <h1>Gildas KORABALO</h1>
-            <H3 class="and-im-a">And I'm a :<br><span class="job-title" style="color: #0ef;">Front-End Developer | Web Developer | WordPress | Business Lawyer</span></H3>
-            <p>I’m a Web Designer with 3 years of experience.
+            <H3 class="and-im-a"><br><span class="job-title" style="color: #0ef;">Web Developer | Business Lawyer</span></H3>
+            {{-- <p>I’m a Web Designer with 3 years of experience. --}}
                 {{-- <br> exepertise is to create and website design,Front-End design , and many more.... --}}
-            </p>
+            {{-- </p> --}}
             <div class="home-sci">
                 <a href="https://www.facebook.com/profile.php?id=100072012502366" target="_blank" style="--i:7"><i
                         class="bx bxl-facebook"></i></a>
